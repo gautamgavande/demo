@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(77, 165, 77);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#bubbles {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    height: 85%;
+    width: 100%;
+}
+
+#bubbles h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(77, 165, 77);
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.bubble:hover {
+    color: rgb(67, 124, 89);
+    cursor: pointer;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(94, 175, 94);
+    position: fixed;
+    top: -100%;
+}
+
+#board {
+    width: 80%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#top {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(67, 124, 89);
+}
+
+.sc {
+    display: flex;
+    align-items: center;
+    padding: 0 70px;
+    justify-content: space-around;
+    width: calc(100%/3);
+    height: 100%;
+    color: #fff;
+}
+
+#main1 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(81, 158, 81);
+}
+
+#main1 button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 7%;
+    width: 11%;
+}
+
+@media (max-width:600px) {
+    .bubble {
+        height: 20px;
+        width: 20px;
+        font-size: 10px;
+    }
+    .sc {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        justify-content: space-around;
+        width: calc(100%/3);
+        height: 100%;
+        color: #fff;
+    }
+    #main1 button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 7%;
+        width: 100%;
+    }
+}
